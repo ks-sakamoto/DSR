@@ -54,7 +54,7 @@
 #
 #===============================================================================
 
-from collections import defaultdict
+import defaultdict
 import time
 
 #Returns current time
@@ -68,9 +68,9 @@ class RouteCache:
   #-----------------------------------------------------------
   def __init__(self, myID):
     #graph representation
-    self.__edge_list = defaultdict(set)
+    self.__edge_list = defaultdict.defaultdict(set)
     #ages of all edges
-    self.__edge_age = defaultdict(dict)
+    self.__edge_age = defaultdict.defaultdict(dict)
     #id of root node
     self.__me = myID
     #maximum age of a link in milliseconds
