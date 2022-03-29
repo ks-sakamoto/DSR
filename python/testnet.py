@@ -63,7 +63,6 @@
 
 import dsr
 import random
-import string
 import sys
 
 SIMULATION_STEPS = 100
@@ -100,11 +99,11 @@ CAN_TALK = [(0,  [ [0, 1, 1, 1, 1],    # 0
            # 1 = True
 
 NODE_LIST = []
-
+ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 #generates a random string
 def random_string():
-  return ''.join([random.choice(string.ascii_letters) for _ in range(6)])
+  return ''.join([random.choice(ascii_letters) for _ in range(6)])
 
 
 
