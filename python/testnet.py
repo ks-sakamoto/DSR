@@ -130,7 +130,7 @@ class Node:
           NODE_LIST[n].dsr.receive_packet(ts[0])
 
 
-if __name__ == '__main__':
+def main():
   #Whoever added the stupid log file bullshit: you can just pipe to a log file (python testnet.py > logfile)
   #init node list
   for i in range(0, len(CAN_TALK[0][1])):
